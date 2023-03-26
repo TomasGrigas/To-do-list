@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <h1 >My To-Do List</h1>
+  <p><input type="text"  placeholder="Enter new to-do" maxlength="160" required /></p>
+  <p><input type="text"  placeholder="Enter category" list="categoryList" maxlength="160" required /></p>
+  <datalist id="categoryList">
+    <option value="Personal"></option>
+    <option value="Work"></option>
+  </datalist>
+  <p><input type="datetime-local" id="dateInput" required></p>
+  <div><button type="submit" id="addBtn">Add To-Do</button></div>
+  <div><button type="submit" id="sortBtn">Sort</button></div>
+  <table id="todoTable">
+    <tr>
+      <td>Done</td>
+      <td>Deadline date</td>
+      <td>To-Do</td>
+      <td>
+        <select id="categoryFilter">
+        </select>
+      </td>
+      <td>Delete</td>
+    </tr>
+  </table>
+  <script src="main.js"></script>
+</body>
+</html>
